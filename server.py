@@ -1,4 +1,4 @@
-import socke
+import socket
 from threading import Thread
 from time import sleep
 IP = "0.0.0.0"
