@@ -36,7 +36,7 @@ sleep(1)
 name = input("Enter your name to start: ")
 
 print("Choose color:")
-print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE")
+print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA")
 color = input("> ").upper()
 
 if color == "RED":
@@ -51,8 +51,7 @@ elif color == "BLUE":
     client_color = Fore.BLUE
 elif color == "MAGENTA":
     client_color = Fore.MAGENTA
-elif color == "WHITE":
-    client_color = Fore.WHITE
+
 
 joined = name+" joined the chat"
 msg = f"{client_color}{joined}{Fore.RESET}"
@@ -81,7 +80,7 @@ while True:
         name = input("Enter your new name: ")
     elif msg.lower() == "/change color":
         print("Choose color:")
-        print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE")
+        print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA")
         color = input("> ").upper()
         if color == "RED":
             client_color = Fore.RED
@@ -95,8 +94,6 @@ while True:
             client_color = Fore.BLUE
         elif color == "MAGENTA":
             client_color = Fore.MAGENTA
-        elif color == "WHITE":
-            client_color = Fore.WHITE
 
     else:
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
