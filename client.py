@@ -37,8 +37,8 @@ sleep(1)
 name = input("Enter your name to start: ")
 
 print("Choose color:")
-print("Options: BLUE, CYAN, GREEN, LIGHTBLACK_EX, LIGHTBLUE_EX, LIGHTCYAN_EX, LIGHTGREEN_EX, LIGHTMAGENTA_EX, LIGHTRED_EX, LIGHTWHITE_EX, LIGHTYELLOW_EX, MAGENTA, RED, WHITE, YELLOW")
-color = input(":").upper()
+print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE")
+color = input("> ").upper()
 
 if color == "RED":
     client_color = Fore.RED
@@ -68,8 +68,8 @@ while True:
     msg =  input()
     if msg.lower() == 'q':
         break
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S') 
-    msg = f"{client_color}[{timestamp}] {name}{separator_token}{msg}{Fore.RESET}"
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
+    msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {msg}{Fore.RESET}"
     swift.send(msg.encode())
-
+    
 swift.close()
