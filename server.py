@@ -1,6 +1,6 @@
 import socket
 from threading import Thread
-
+from time import sleep
 IP = "0.0.0.0"
 PORT = 5500
 separator_token = "<SEP>"
@@ -10,6 +10,15 @@ swift = socket.socket()
 swift.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 swift.bind((IP, PORT))
 swift.listen(5)
+
+print("Wecome to")
+print("╭━━━╮╱╱╱╱╱╱╭━┳╮╱╭━━━┳╮╱╱╱╱╭╮")
+print("┃╭━╮┃╱╱╱╱╱╱┃╭╯╰╮┃╭━╮┃┃╱╱╱╭╯╰╮")
+print("┃╰━━┳╮╭╮╭┳┳╯╰╮╭╯┃┃╱╰┫╰━┳━┻╮╭╯")
+print("╰━━╮┃╰╯╰╯┣╋╮╭┫┃╱┃┃╱╭┫╭╮┃╭╮┃┃")
+print("┃╰━╯┣╮╭╮╭┫┃┃┃┃╰╮┃╰━╯┃┃┃┃╭╮┃╰╮")
+print("╰━━━╯╰╯╰╯╰╯╰╯╰━╯╰━━━┻╯╰┻╯╰┻━╯")
+sleep(1)
 print(f"Watching {IP}:{PORT}")
 
 def listen_for_client(lc):
