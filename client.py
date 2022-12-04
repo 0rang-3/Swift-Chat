@@ -3,7 +3,7 @@ import random
 from threading import Thread
 from datetime import datetime
 from colorama import Fore, init, Back
-import time
+from time import sleep
 
 init()
 
@@ -19,12 +19,22 @@ PORT = 5500
 separator_token = "<SEP>"
 
 swift = socket.socket()
+
+
 print(f"Connecting to {IP}:{PORT}...")
 swift.connect((IP, PORT))
-time.sleep(1)
+sleep(1)
 print("Connected!")
 
-name = input("Enter your name: ")
+print("Welcome to ")
+print("╭━━━╮╱╱╱╱╱╱╭━┳╮╱╭━━━┳╮╱╱╱╱╭╮")
+print("┃╭━╮┃╱╱╱╱╱╱┃╭╯╰╮┃╭━╮┃┃╱╱╱╭╯╰╮")
+print("┃╰━━┳╮╭╮╭┳┳╯╰╮╭╯┃┃╱╰┫╰━┳━┻╮╭╯")
+print("╰━━╮┃╰╯╰╯┣╋╮╭┫┃╱┃┃╱╭┫╭╮┃╭╮┃┃")
+print("┃╰━╯┣╮╭╮╭┫┃┃┃┃╰╮┃╰━╯┃┃┃┃╭╮┃╰╮")
+print("╰━━━╯╰╯╰╯╰╯╰╯╰━╯╰━━━┻╯╰┻╯╰┻━╯")
+sleep(1)
+name = input("Enter your name to start: ")
 
 def listen_for_messages():
     while True:
