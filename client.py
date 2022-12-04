@@ -12,7 +12,7 @@ colors = [Fore.BLUE, Fore.CYAN, Fore.GREEN, Fore.LIGHTBLACK_EX, Fore.LIGHTBLUE_E
     Fore.MAGENTA, Fore.RED, Fore.WHITE, Fore.YELLOW
 ]
 
-client_color = random.choice(colors)
+
 
 IP = "127.0.0.1"
 PORT = 5500
@@ -35,6 +35,25 @@ print("┃╰━╯┣╮╭╮╭┫┃┃┃┃╰╮┃╰━╯┃┃┃┃�
 print("╰━━━╯╰╯╰╯╰╯╰╯╰━╯╰━━━┻╯╰┻╯╰┻━╯")
 sleep(1)
 name = input("Enter your name to start: ")
+
+print("Choose color:")
+print("Options: BLUE, CYAN, GREEN, LIGHTBLACK_EX, LIGHTBLUE_EX, LIGHTCYAN_EX, LIGHTGREEN_EX, LIGHTMAGENTA_EX, LIGHTRED_EX, LIGHTWHITE_EX, LIGHTYELLOW_EX, MAGENTA, RED, WHITE, YELLOW")
+color = input(":").upper()
+
+if color == "RED":
+    client_color = Fore.RED
+elif color == "YELLOW":
+    client_color = Fore.YELLOW
+elif color == "GREEN":
+    client_color = Fore.GREEN
+elif color == "CYAN":
+    client_color = Fore.CYAN
+elif color == "BLUE":
+    client_color = Fore.BLUE
+elif color == "MAGENTA":
+    client_color = Fore.MAGENTA
+elif color == "WHITE":
+    client_color = Fore.WHITE
 
 def listen_for_messages():
     while True:
