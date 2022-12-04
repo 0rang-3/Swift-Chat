@@ -71,15 +71,15 @@ thread.start()
 while True:
     msg =  input()
     if msg.lower() == "/help":
-        print("Menu\n+--------------+\n1. /partymode --> It's party time!\n2. /change_name --> Changes your username on Swift Chat!\n3. /change_color --> Change your text color on Swift Chat!")
+        print("Menu\n+--------------+\n1. /partymode --> It's party time!\n2. /change name --> Changes your username on Swift Chat!\n3. /change color --> Change your text color on Swift Chat!")
         
     elif msg.lower() == "/partymode":
         partymode = "🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉"
         msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {partymode}{Fore.RESET}"
         swift.send(msg.encode())
-    elif msg.lower() == "/change_name":
+    elif msg.lower() == "/change name":
         name = input("Enter your new name: ")
-    elif msg.lower() == "/change_color":
+    elif msg.lower() == "/change color":
         print("Choose color:")
         print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA, WHITE")
         color = input("> ").upper()
@@ -97,7 +97,6 @@ while True:
             client_color = Fore.MAGENTA
         elif color == "WHITE":
             client_color = Fore.WHITE
-
 
     else:
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
