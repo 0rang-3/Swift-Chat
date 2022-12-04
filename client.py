@@ -4,7 +4,6 @@ from threading import Thread
 from datetime import datetime
 from colorama import Fore, init, Back
 import time
-#hi
 
 init()
 
