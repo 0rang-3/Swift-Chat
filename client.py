@@ -13,7 +13,6 @@ colors = [Fore.BLUE, Fore.CYAN, Fore.GREEN, Fore.LIGHTBLACK_EX, Fore.LIGHTBLUE_E
 ]
 
 
-
 IP = "127.0.0.1"
 PORT = 5500
 separator_token = "<SEP>"
@@ -55,6 +54,11 @@ elif color == "MAGENTA":
 elif color == "WHITE":
     client_color = Fore.WHITE
 
+joined = name+" joined the chat"
+msg = f"{client_color}{joined}{Fore.RESET}"
+print("\n")
+swift.send(msg.encode())
+
 def listen_for_messages():
     while True:
         message = swift.recv(1024).decode()
@@ -66,10 +70,17 @@ thread.start()
 
 while True:
     msg =  input()
-    if msg.lower() == 'q':
-        break
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
-    msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {msg}{Fore.RESET}"
-    swift.send(msg.encode())
+    if msg.lower() == "/help":
+        #all the commands
+        print("placeholder")
+    elif msg.lower() == "/partymode":
+        partymode = "🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉"
+        msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {partymode}{Fore.RESET}"
+        swift.send(msg.encode())
+
+    else:
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
+        msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {msg}{Fore.RESET}"
+        swift.send(msg.encode())
     
 swift.close()
