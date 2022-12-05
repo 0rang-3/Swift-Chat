@@ -11,7 +11,7 @@ swift.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 swift.bind((IP, PORT))
 swift.listen(5)
 
-print("Wecome to")
+print("Welcome to")
 print("╭━━━╮╱╱╱╱╱╱╭━┳╮╱╭━━━┳╮╱╱╱╱╭╮")
 print("┃╭━╮┃╱╱╱╱╱╱┃╭╯╰╮┃╭━╮┃┃╱╱╱╭╯╰╮")
 print("┃╰━━┳╮╭╮╭┳┳╯╰╮╭╯┃┃╱╰┫╰━┳━┻╮╭╯")
