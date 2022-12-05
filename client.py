@@ -4,6 +4,8 @@ from threading import Thread
 from datetime import datetime
 from colorama import Fore, init, Back
 from time import sleep
+import csv
+from playsound import playsound
 
 init()
 
@@ -77,7 +79,13 @@ while True:
         msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {partymode}{Fore.RESET}"
         swift.send(msg.encode())
     elif msg.lower() == "/change name":
-        name = input("Enter your new name: ")
+        newname = input("Enter your new name: ")
+        with open('participants.csv', 'r') as file:
+            data = file.read()
+            data = data.replace(name, newname)
+        with open('participants.csv', 'w') as file:
+            file.write(data)
+        name = newname
     elif msg.lower() == "/change color":
         print("Choose color:")
         print("Options: RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA")
@@ -94,10 +102,26 @@ while True:
             client_color = Fore.BLUE
         elif color == "MAGENTA":
             client_color = Fore.MAGENTA
-
+    elif msg.lower() == "/participants":
+        with open('participants.csv', 'r') as file:
+            reader = csv.reader(file)
+            for x in reader:
+                print(x)
+    elif msg.lower() == "/online":
+        with open('participants.csv', 'a') as file:
+            file.write(name+"\n")
+    elif msg.lower() == "/offline":
+        with open('participants.csv', 'r') as file:
+            data = file.read()
+            data = data.replace(name, "")
+        with open('participants.csv', 'w') as file:
+            file.write(data)
+            print('done')
+        
     else:
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
         msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {msg}{Fore.RESET}"
         swift.send(msg.encode())
+        playsound('/users/ruhanpandit/Downloads/Steel City Hackathon/swiftchatsound.mp3')
     
 swift.close()
