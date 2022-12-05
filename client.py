@@ -72,7 +72,7 @@ thread.start()
 while True:
     msg =  input()
     if msg.lower() == "/help":
-        print("Menu\n+--------------+\n1. /partymode --> It's party time!\n2. /change name --> Changes your username on Swift Chat!\n3. /change color --> Change your text color on Swift Chat!")
+        print("Menu\n+--------------+\n1. /partymode --> It's party time!\n2. /change name --> Changes your username on Swift Chat!\n3. /change color --> Change your text color on Swift Chat!\n4. /participants --> Shows the participants that are online\n5. /online --> Adds yourself to the participants list\n6. /offline --> Removes yourself from the participants list")
         
     elif msg.lower() == "/partymode":
         partymode = "🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉"
