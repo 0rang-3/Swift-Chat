@@ -73,8 +73,8 @@ thread.start()
 
 while True:
     msg =  input()
-    if msg.lower() == "/help":
-        print("Menu\n+--------------+\n1. /partymode --> It's party time!\n2. /change name --> Changes your username on Swift Chat!\n3. /change color --> Change your text color on Swift Chat!\n4. /participants --> Shows the participants that are online\n5. /online --> Adds yourself to the participants list\n6. /offline --> Removes yourself from the participants list\n7. /set status --> Set a custom status that is visible in the participants list\n8. /remove status --> Removes your status from the participants list")
+    if msg.lower() == "/commands":
+        print("Commands Menu\n+--------------+\n1. /partymode --> It's party time!\n2. /change name --> Changes your username on Swift Chat!\n3. /change color --> Change your text color on Swift Chat!\n4. /participants --> Shows the participants that are online\n5. /online --> Adds yourself to the participants list\n6. /offline --> Removes yourself from the participants list\n7. /set status --> Set a custom status that is visible in the participants list\n8. /remove status --> Removes your status from the participants list")
         
     elif msg.lower() == "/partymode":
         partymode = "🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉"
@@ -172,6 +172,6 @@ while True:
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M') 
         msg = f"{client_color}{name} [{timestamp}] {separator_token} \n {msg}{Fore.RESET}"
         swift.send(msg.encode())
-        playsound('~/swiftchatsound.mp3')
+        playsound('/users/ruhanpandit/Downloads/Steel City Hackathon/swiftchatsound.mp3')
     
 swift.close()
