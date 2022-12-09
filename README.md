@@ -1,5 +1,5 @@
 # Project Title
-<img src="https://i.imgur.com/FEADYmQ.png" alt="Swift Chat" width="900"/>
+<img src="https://i.imgur.com/FEADYmQ.png" alt="Swift Chat" width="500"/>
 Simple overview of use/purpose.
 
 ## Description
