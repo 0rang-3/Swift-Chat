@@ -5,7 +5,22 @@
 ## Description
 
 Welcome to Swift Chat: A terminal based chat service to help connect you and your friends from anywhere in the world!
+### Features
+/change color: change the color of your texts
 
+/change name: change your username
+
+/participants: view the participants online, as well as their statuses
+
+/online: appear on the participants list
+
+/offline: no longer appear on the participants list
+
+/set status: set a custom status 
+
+/remove status: remove your custom status
+
+/partymode: send out party emojis to celebrate an occasion
 ## Getting Started
 
 ### Dependencies
