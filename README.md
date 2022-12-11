@@ -65,6 +65,7 @@ python client.py
 
 ## Version History
 
+* 1.9 - Pun Command
 * 1.8 - User Status
 * 1.7 - Notification Sound
 * 1.6 - Participants list and commands
