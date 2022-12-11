@@ -8,19 +8,19 @@ Welcome to Swift Chat: A terminal based chat service to help connect you and you
 ### Features
 /change color: change the color of your texts
 
-/change name: change your username
+`/change name`: change your username
 
-/participants: view the participants online, as well as their statuses
+`/participants`: view the participants online, as well as their statuses
 
-/online: appear on the participants list
+`/online`: appear on the participants list
 
-/offline: no longer appear on the participants list
+`/offline`: no longer appear on the participants list
 
-/set status: set a custom status 
+`/set status`: set a custom status 
 
-/remove status: remove your custom status
+`/remove status`: remove your custom status
 
-/partymode: send out party emojis to celebrate an occasion
+`/partymode`: send out party emojis to celebrate an occasion
 ## Getting Started
 
 ### Dependencies
