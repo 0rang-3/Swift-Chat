@@ -4,7 +4,7 @@
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Welcome to Swift Chat: A terminal based chat service to help connect you and your friends from anywhere in the world!
 
 ## Getting Started
 
