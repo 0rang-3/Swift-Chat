@@ -54,7 +54,7 @@ python client.py
 
 ## Help
 
-* If the python command does not work, try `python3 filename.py`
+* If the python command does not work, try `python3 server.py` or `python3 client.py`
 * Please open an issue in this repository if you find a problem.
 
 
