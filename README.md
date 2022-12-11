@@ -65,11 +65,15 @@ python client.py
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+* 1.8 - User Status
+* 1.7 - Notification Sound
+* 1.6 - Participants list and commands
+* 1.5 - Commands Feature
+* 1.4 - Join chat message
+* 1.3 - Removes seconds from timestamp
+* 1.2 - Allows users to change their text color
+* 1.1 - Adds the Swift Chat welcome message on launch
+* 1.0 - Initial Release; Creates `server.py` and `client.py`
 
 ## License
 
