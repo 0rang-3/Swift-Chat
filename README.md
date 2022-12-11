@@ -21,6 +21,9 @@ Welcome to Swift Chat: A terminal based chat service to help connect you and you
 `/remove status`: remove your custom status
 
 `/partymode`: send out party emojis to celebrate an occasion
+
+`/pun`: send a pun in the chat room
+
 ## Getting Started
 
 ### Dependencies
