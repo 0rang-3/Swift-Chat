@@ -6,7 +6,7 @@
 
 Welcome to Swift Chat: A terminal based chat service to help connect you and your friends from anywhere in the world!
 ### Features
-/change color`: change the color of your texts
+`/change color`: change the color of your texts
 
 `/change name`: change your username
 
