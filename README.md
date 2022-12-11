@@ -1,5 +1,5 @@
 # Swift Chat
-<img src="https://i.imgur.com/FEADYmQ.png" alt="Swift Chat" width="300"/>
+<img src="https://i.imgur.com/Xljxlw6.png" alt="Swift Chat" width="300"/>
 Simple overview of use/purpose.
 
 ## Description
